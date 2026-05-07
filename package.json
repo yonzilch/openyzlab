@@ -1,7 +1,7 @@
 {
-  "name": "nebulous-nebula",
+  "name": "openyzlab",
   "type": "module",
-  "version": "0.0.1",
+  "version": "rolling",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
