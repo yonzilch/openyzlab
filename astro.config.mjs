@@ -5,6 +5,7 @@ import catppuccin from "@catppuccin/starlight";
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://yzlab.eu.org',
   vite: {
     server: {
       allowedHosts: true,
@@ -13,6 +14,7 @@ export default defineConfig({
   integrations: [
     starlight({
       title: 'OpenYZLab',
+      favicon: '/favicon.ico',
       social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/yonzilch/yzlab' }],
       plugins: [
         catppuccin({
