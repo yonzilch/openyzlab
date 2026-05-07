@@ -1,0 +1,222 @@
+---
+title: 服务列表（需要登录）
+description:  服务列表（需要登录）
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside type="caution" title="需要单点登录">
+本页所有服务均需通过 [auth | yzlab](https://auth.yzlab.eu.org) 进行单点登录 (SSO) 后方可访问。如尚未拥有账号，请联系管理员。
+</Aside>
+
+## 开发工具
+
+### Forgejo
+- **URL**: https://git.yzlab.eu.org
+- **用途**: 轻量级 Git 仓库托管平台，Go 语言编写的 Gitea 社区分支
+- **使用场景**: 代码版本管理、团队协作开发、CI/CD 流水线集成
+- **主要功能**: Git 仓库管理、Issues 追踪、Pull Requests 审查、Actions 工作流
+
+### Woodpecker CI
+- **URL**: https://ci.yzlab.eu.org
+- **用途**: 开源自托管 CI/CD 引擎，与 Forgejo 深度集成
+- **使用场景**: 代码提交后自动化构建、测试与部署
+- **主要功能**: Docker 原生流水线、插件生态、多仓库并发执行
+
+### Yaade
+- **URL**: https://api.yzlab.eu.org
+- **用途**: 自托管 API 开发与调试平台
+- **使用场景**: 接口联调测试、团队共享 API 集合、多环境切换
+- **主要功能**: 可视化请求构建、环境变量管理、响应分析、团队协作
+
+### OpenGist
+- **URL**: https://gist.yzlab.eu.org
+- **用途**: 自托管代码片段分享服务，类似 GitHub Gist
+- **使用场景**: 代码片段保存与分享、技术笔记存储
+- **主要功能**: Git 版本控制、Markdown 渲染、公开 / 私密模式
+
+---
+
+## 设计与创作
+
+### Penpot
+- **URL**: https://penpot.yzlab.eu.org
+- **用途**: 开源 UI/UX 设计与原型制作平台
+- **使用场景**: 界面设计、交互原型制作、设计系统管理与协作
+- **主要功能**: 矢量图形编辑、原型交互连接、组件库与设计令牌
+
+---
+
+## 协作工具
+
+### Hedgedoc
+- **URL**: https://doc.yzlab.eu.org
+- **用途**: 实时协作 Markdown 编辑器
+- **使用场景**: 团队文档共写、会议记录、知识沉淀
+- **主要功能**: 多人同步编辑、版本历史、完整 Markdown 与图表支持
+
+### Grist
+- **URL**: https://grist.yzlab.eu.org
+- **用途**: 现代化关系型电子表格，介于 Excel 与数据库之间
+- **使用场景**: 结构化数据管理、项目跟踪、轻量级业务数据库
+- **主要功能**: 跨表关联、公式引擎、API 访问、自定义视图
+
+### Vikunja
+- **URL**: https://task.yzlab.eu.org
+- **用途**: 开源任务与项目管理工具
+- **使用场景**: 个人待办管理、团队任务分配、项目里程碑规划
+- **主要功能**: 列表 / 看板 / 甘特图视图、日历集成、标签与过滤
+
+### Scrumboy
+- **URL**: https://board.yzlab.eu.org
+- **用途**: 敏捷开发看板工具
+- **使用场景**: Scrum 迭代管理、团队任务可视化、Sprint 规划
+- **主要功能**: 看板管理、Sprint 规划、燃尽图
+
+---
+
+## 媒体与阅读
+
+### Kavita
+- **URL**: https://read.yzlab.eu.org
+- **用途**: 自托管漫画与轻小说服务器
+- **使用场景**: 个人漫画 / 小说库管理与在线阅读
+- **主要功能**: 元数据刮削、多用户权限、阅读进度云同步
+
+### Calibre-Web-Automated
+- **URL**: https://book.yzlab.eu.org
+- **用途**: 自动化电子书库管理与阅读界面
+- **使用场景**: 电子书收藏管理、在线阅读、发送至阅读器
+- **主要功能**: OPDS 协议支持、多格式兼容、自动元数据更新
+
+### ABS (AudioBookShelf)
+- **URL**: https://abs.yzlab.eu.org
+- **用途**: 自托管有声书与播客服务器
+- **使用场景**: 有声书收藏管理、在线收听、跨设备续听
+- **主要功能**: 播放进度云同步、多用户管理、元数据管理、客户端 App 支持
+
+### Ryot
+- **URL**: https://ryo.yzlab.eu.org
+- **用途**: 个人媒体消费追踪工具
+- **使用场景**: 记录电影、剧集、游戏、音乐、书籍的观看 / 游玩状态
+- **主要功能**: 多类型媒体追踪、评分与评论、进度统计与数据可视化
+
+---
+
+## RSS
+
+### Miniflux
+- **URL**: https://rss.yzlab.eu.org
+- **用途**: 极简自托管 RSS 阅读器
+- **使用场景**: RSS 订阅集中管理、新闻聚合阅读
+- **主要功能**: 全文抓取、Fever / Google Reader 兼容 API、键盘快捷键
+
+#### ReactFlux <small>（Miniflux 前端）</small>
+- **URL**: https://reactflux.yzlab.eu.org
+- **用途**: 基于 Miniflux 的现代化 RSS 阅读前端
+- **使用场景**: 以更美观的卡片式界面访问 Miniflux 订阅
+- **主要功能**: 响应式卡片布局、键盘快捷键、阅读进度追踪
+
+---
+
+## 文件与存储
+
+### Dufs
+- **URL**: https://fs.yzlab.eu.org
+- **用途**: 轻量级 WebDAV 文件服务器
+- **使用场景**: 临时文件分享、WebDAV 客户端挂载
+- **主要功能**: 文件上传下载、WebDAV 协议、基础认证
+
+### Zipline
+- **URL**: https://zipline.yzlab.eu.org
+- **用途**: 轻量级文件上传与分享服务
+- **使用场景**: 图片与文件快速上传并生成短链
+- **主要功能**: 上传 API、链接管理、图片处理、权限控制
+
+---
+
+## 安全与认证
+
+### Vaultwarden
+- **URL**: https://vault.yzlab.eu.org
+- **用途**: Bitwarden 兼容的自托管密码管理服务端
+- **使用场景**: 个人与团队密码安全存储与跨设备同步
+- **主要功能**: 密码生成与存储、浏览器自动填充、跨设备同步、组织共享
+
+### VoidAuth
+- **URL**: https://auth.yzlab.eu.org
+- **用途**: 轻量级统一身份认证服务，为本站各服务提供 SSO
+- **使用场景**: 单点登录管理、OAuth 应用授权、用户账号管理
+- **主要功能**: OpenID Connect / OAuth 2.0、多应用接入、用户与权限管理
+
+---
+
+## 社交与通讯
+
+### Matrix (Synapse)
+- **URL**: https://matrix.yzlab.eu.org
+- **用途**: 去中心化开放通讯协议服务端
+- **使用场景**: 自托管即时通讯、私密聊天、跨平台联邦通信
+- **主要功能**: 端到端加密、跨服务器联邦、机器人与 Webhook 集成
+
+#### Element <small>（Matrix 前端）</small>
+- **URL**: https://element.yzlab.eu.org
+- **用途**: Matrix 协议的官方 Web 客户端
+- **使用场景**: 通过浏览器访问 Matrix 网络
+- **主要功能**: 房间管理、语音视频通话、文件分享、加密消息
+
+### GoToSocial
+- **URL**: https://social.yzlab.eu.org
+- **用途**: 轻量级 ActivityPub 联邦社交服务端
+- **使用场景**: 自托管个人或小团队社交实例、接入联邦宇宙
+- **主要功能**: Mastodon API 兼容、极低资源占用、自定义可见性
+
+#### Elk <small>（GoToSocial / Mastodon 前端）</small>
+- **URL**: https://elk.yzlab.eu.org
+- **用途**: 现代化 Mastodon Web 客户端
+- **使用场景**: 浏览联邦时间线、发帖互动
+- **主要功能**: 流畅的现代化界面、多账号切换、通知管理、键盘快捷键
+
+#### Masto-FE <small>（GoToSocial / Mastodon 前端）</small>
+- **URL**: https://masto-fe.yzlab.eu.org
+- **用途**: Mastodon 官方 Web 前端
+- **使用场景**: 通过标准 Mastodon 界面访问联邦社交实例
+- **主要功能**: 时间线浏览、发帖与互动、用户与列表管理
+
+---
+
+## 翻译与本地化
+
+### Weblate
+- **URL**: https://weblate.yzlab.eu.org
+- **用途**: 基于 Web 的软件本地化与翻译协作平台
+- **使用场景**: 开源项目多语言翻译、本地化团队协作管理
+- **主要功能**: Git 仓库集成、翻译记忆库、质量检查、贡献者管理
+
+---
+
+## 管理与信息聚合
+
+### Wiki
+- **URL**: https://wiki.yzlab.eu.org
+- **用途**: 团队知识库与 Wiki 系统
+- **使用场景**: 技术文档沉淀、团队知识共享与协作编辑
+- **主要功能**: 富文本页面编辑、版本历史、细粒度权限管理
+
+### Linkwarden
+- **URL**: https://link.yzlab.eu.org
+- **用途**: 开源书签归档与管理工具
+- **使用场景**: 网页收藏与离线存档、知识积累与检索
+- **主要功能**: 全文搜索、标签分类、网页快照归档、团队共享
+
+### HomeBox
+- **URL**: https://item.yzlab.eu.org
+- **用途**: 家庭物品与资产库存管理系统
+- **使用场景**: 个人物品分类管理、资产追踪与盘点
+- **主要功能**: 层级位置管理、二维码标签打印、自定义字段
+
+### Wallos
+- **URL**: https://wallos.yzlab.eu.org
+- **用途**: 订阅与周期性账单追踪工具
+- **使用场景**: 管理各类订阅服务、统计月度支出
+- **主要功能**: 订阅到期提醒、费用统计图表、多货币支持
